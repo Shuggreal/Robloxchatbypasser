@@ -7,5 +7,6 @@ Update: It Took way too long to update the ui so it looks clean (Old Ui)
 ![image](https://github.com/user-attachments/assets/1df1779b-e048-4842-92d2-0266ef9d0ef6)
 
 New Ui
-![image](https://github.com/user-attachments/assets/f3d13420-9cd7-466a-bff1-4120b20f2157)
+![image](https://github.com/user-attachments/assets/69f39b04-351d-4bad-b9f7-764c008077cc)
+
 
