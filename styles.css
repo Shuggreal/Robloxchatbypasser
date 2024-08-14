@@ -34,8 +34,8 @@ h1 {
 input[type="text"],
 select {
     width: 100%;
-    padding: 10px;
-    font-size: 16px;
+    padding: 15px; /* Increase padding to make the input box bigger */
+    font-size: 18px; /* Increase font size */
     border: 1px solid #ddd; /* Adjust border color */
     border-radius: 4px;
     margin-bottom: 10px;
@@ -70,4 +70,21 @@ button:hover {
     border-radius: 4px;
     min-height: 40px;
     line-height: 1.4;
+}
+
+/* GitHub link styles */
+.github-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.github-link a {
+    color: #333; /* Dark color for GitHub icon */
+    font-size: 32px; /* Larger size for the icon */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.github-link a:hover {
+    color: #ff7e5f; /* Match the hover color to the theme */
 }
