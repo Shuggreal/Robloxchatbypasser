@@ -32,7 +32,7 @@ function processWordScript2(word) {
         .replace(/p/g, 'Ρ')
         .replace(/q/g, 'Ꝗ')
         .replace(/r/g, 'Ř')
-        .replace(/s/g, '$')
+        .replace(/s/g, 'Š')
         .replace(/t/g, 'Τ')
         .replace(/u/g, 'Џ')
         .replace(/v/g, 'Ṿ')
@@ -76,6 +76,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const inputWord = document.getElementById('inputWord');
     const selectOption = document.getElementById('selectOption');
     const outputWord = document.getElementById('outputWord');
+    const copyButton = document.getElementById('copyButton');
 
     inputWord.addEventListener('input', function() {
         const word = inputWord.value.trim();
@@ -89,6 +90,16 @@ document.addEventListener("DOMContentLoaded", function() {
         const option = selectOption.value;
         const processed = processWord(parseInt(option), word);
         outputWord.textContent = processed;
+    });
+
+    // Copy processed text to clipboard
+    copyButton.addEventListener('click', function() {
+        const textToCopy = outputWord.textContent;
+        navigator.clipboard.writeText(textToCopy).then(function() {
+            alert('Copied to clipboard!');
+        }).catch(function(error) {
+            alert('Failed to copy text: ' + error);
+        });
     });
 
     // Initial processing
