@@ -1,5 +1,5 @@
 # Robloxchatbypasser
-A bunch of people are forking this repo and making there own "Bypasser Hub" of this lol i made this repo private for a bit to update it with better bypassing algorythms then made it public again
+
 
 A website that i made where you can enter words and it will give you the bypassed version of
 there are 3 Methods options (1 and 2 are similar) use responsibly lol 
