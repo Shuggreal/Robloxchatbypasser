@@ -15,17 +15,20 @@
         <label for="inputWord">Enter a word or phrase:</label>
         <textarea id="inputWord" placeholder="Enter your word or phrase..."></textarea>
         
-        <label for="selectOption">Processing option:</label>
-        <select id="selectOption">
-            <option value="1" selected>Method 1</option>
-            <option value="2">Method 2</option>
-            <option value="3">Method 3</option>
-        </select>
+        <div class="select-container">
+            <label for="selectOption">Processing option:</label>
+            <select id="selectOption">
+                <option value="1" selected>Method 1</option>
+                <option value="2">Method 2</option>
+                <option value="3">Method 3</option>
+            </select>
+        </div>
         
         <div id="outputContainer">
             <label for="outputWord">Processed word:</label>
             <div id="outputWord" class="output"></div>
             <button id="copyButton">Copy</button>
+            <div id="copyNotification" class="copy-notification">Copied!</div> <!-- Notification -->
         </div>
 
         <!-- GitHub icon with link -->
