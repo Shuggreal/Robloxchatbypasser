@@ -31,8 +31,7 @@ h1 {
     font-family: 'Segoe UI', sans-serif;
 }
 
-textarea,
-select {
+textarea {
     width: 100%;
     padding: 15px;
     font-size: 18px;
@@ -43,7 +42,6 @@ select {
     min-height: 100px;
 }
 
-/* Smaller styling for the "Processing option" */
 .select-container {
     display: flex;
     align-items: center;
@@ -53,18 +51,21 @@ select {
 
 .select-container label {
     font-size: 14px;
+    margin-right: 10px;
+    flex: 0 0 auto;
 }
 
 .select-container select {
     padding: 5px;
     font-size: 14px;
     width: 100px;
+    flex: 0 0 120px;
 }
 
 button {
     display: block;
     width: 100%;
-    padding: 12px;
+    padding: 10px;
     background-color: #ff7e5f;
     color: white;
     border: none;
@@ -81,6 +82,7 @@ button:hover {
 
 #outputContainer {
     margin-top: 20px;
+    position: relative;
 }
 
 .output {
@@ -114,19 +116,22 @@ button:hover {
 .copy-notification {
     display: none;
     position: absolute;
-    bottom: -30px; /* Positioned near the copy button */
+    top: 50%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, -50%);
     background-color: #4caf50;
     color: white;
-    padding: 8px 15px;
+    padding: 5px 10px;
     border-radius: 4px;
-    font-size: 14px;
+    font-size: 12px;
     opacity: 0;
-    transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    visibility: hidden;
+    z-index: 1;
 }
 
 .copy-notification.show {
     display: block;
     opacity: 1;
+    visibility: visible;
 }
