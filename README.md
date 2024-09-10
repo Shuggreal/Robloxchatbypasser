@@ -1,6 +1,8 @@
 # Robloxchatbypasser
 
 
+Don't forget to give my repo a Star ✨ 
+
 A website that i made where you can enter words and it will give you the bypassed version of
 there are 3 Methods options (1 and 2 are similar) use responsibly lol 
 
